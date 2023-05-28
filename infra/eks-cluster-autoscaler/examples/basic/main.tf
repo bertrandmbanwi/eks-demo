@@ -11,7 +11,7 @@ module "vpc" {
 
 module "eks_cluster" {
   source  = "cloudposse/eks-cluster/aws"
-  version = "0.43.2"
+  version = "0.46.0"
 
   region     = "eu-central-1"
   subnet_ids = module.vpc.public_subnets
