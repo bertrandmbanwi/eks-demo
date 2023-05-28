@@ -21,7 +21,7 @@ module "eks_cluster" {
 
 module "eks_node_group" {
   source  = "cloudposse/eks-node-group/aws"
-  version = "0.25.0"
+  version = "0.28.1"
 
   cluster_name   = "cluster-autoscaler"
   instance_types = ["t3.medium"]
